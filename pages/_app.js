@@ -1,4 +1,5 @@
 import { MoralisProvider } from "react-moralis";
+import { NotificationProvider } from "web3uikit";
 
 import "../styles/globals.css";
 import "tailwindcss/tailwind.css";
@@ -6,7 +7,9 @@ import "tailwindcss/tailwind.css";
 function MyApp({ Component, pageProps }) {
   return (
     <MoralisProvider initializeOnMount={false}>
-      <Component {...pageProps} />
+      <NotificationProvider>
+        <Component {...pageProps} />
+      </NotificationProvider>
     </MoralisProvider>
   );
 }
