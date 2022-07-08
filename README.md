@@ -15,4 +15,4 @@ web3 lottery - winner takes it all [see lottery smartcontract](https://github.co
 ### Contract deployment / hosting
 
 - Contract is deployed on Rinkeby Testnet @ 0xf836bec547AB84571bD5F14B0f896cf6355f9007 ([see on rinkeby explorer](https://rinkeby.etherscan.io/address/0xf836bec547AB84571bD5F14B0f896cf6355f9007)).
-- website is deployed ... coming soon.
+- website is deployed on Vercel [here](https://nextjs-smartcontract-lottery.vercel.app/).
