@@ -1,7 +1,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-web3 lottery - winner takes it all [hardhat smartcontract lottery](https://github.com/khadni/hardhat-smartcontract-lottery).
+web3 lottery - winner takes it all [see lottery smartcontract](https://github.com/khadni/hardhat-smartcontract-lottery).
 
 > Note: from [Patrick Collins course](https://github.com/smartcontractkit/full-blockchain-solidity-course-js) on Free Code Camp.
 
