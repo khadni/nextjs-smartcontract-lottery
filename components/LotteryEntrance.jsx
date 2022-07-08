@@ -18,7 +18,11 @@ export default function LotteryEntrance() {
   const lotteryAddress =
     chainId in contractAddresses ? contractAddresses[chainId][0] : null;
 
-  const { runContractFunction: enterLottery } = useWeb3Contract({
+  const {
+    runContractFunction: enterLottery,
+    isLoading,
+    isFetching,
+  } = useWeb3Contract({
     abi: abi,
     contractAddress: lotteryAddress,
     functionName: "enterLottery",
@@ -107,8 +111,13 @@ export default function LotteryEntrance() {
                 });
               }}
               className="inline-flex items-center justify-center w-full px-6 py-4 mt-8 text-lg font-medium text-white border border-transparent rounded-md sm:hidden hover:bg-indigo-400 sm:w-auto bg-gradient-to-r from-cyan-500 to-blue-500"
+              disabled={isLoading || isFetching}
             >
-              Enter the next round (0.01 ETH)
+              {isLoading || isFetching ? (
+                <div className="w-8 h-8 border-b-2 rounded-full animate-spin spinner-border"></div>
+              ) : (
+                <div>Enter the next round (0.01 ETH) </div>
+              )}
             </button>
             <div className="flex items-center justify-center px-5 py-5 pt-12 min-w-screen">
               <div className="w-full max-w-3xl">
@@ -167,8 +176,13 @@ export default function LotteryEntrance() {
                 });
               }}
               className="inline-flex items-center justify-center hidden w-full px-6 py-4 mt-8 text-lg font-medium text-white border border-transparent rounded-md sm:inline-block hover:bg-indigo-400 sm:w-auto bg-gradient-to-r from-cyan-500 to-blue-500"
+              disabled={isLoading || isFetching}
             >
-              Enter the next round (0.01 ETH)
+              {isLoading || isFetching ? (
+                <div className="w-8 h-8 border-b-2 rounded-full animate-spin spinner-border"></div>
+              ) : (
+                <div>Enter the next round (0.01 ETH) </div>
+              )}
             </button>
           </>
         ) : (
