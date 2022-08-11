@@ -96,7 +96,7 @@ export default function LotteryEntrance() {
     <div>
       <div className="px-4 py-16 mx-auto text-center sm:py-20 sm:px-6 lg:px-8">
         <h2 className="text-3xl font-extrabold text-gray-800 sm:text-5xl">
-          <span className="block">Play the web3 lottery</span>
+          <span className="block">Play the web3 lottery on Rinkeby</span>
         </h2>
         <p className="mt-4 text-2xl leading-6 text-blue-400">
           Winner takes it all.
